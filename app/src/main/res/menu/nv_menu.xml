@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/m01"
+            android:title="生产报工"
+            android:checkable="true"
+            android:icon="@mipmap/ic_smbg_black_24dp" />
+
+        <item
+            android:id="@+id/m02"
+            android:title="原料收货"
+            android:checkable="true"
+            android:icon="@mipmap/ic_account_circle_black_48dp" />
+
+        <item
+            android:id="@+id/m03"
+            android:title="原料检验"
+            android:checkable="true"
+            android:icon="@mipmap/ic_account_circle_black_48dp" />
+
+        <item
+            android:id="@+id/m04"
+            android:title="原料上架"
+            android:checkable="true"
+            android:icon="@mipmap/ic_account_circle_black_48dp" />
+
+        <item
+            android:id="@+id/m05"
+            android:title="生产发料"
+            android:checkable="true"
+            android:icon="@mipmap/ic_account_circle_black_48dp" />
+
+        <item
+            android:id="@+id/m06"
+            android:title="成品上架"
+            android:checkable="true"
+            android:icon="@mipmap/ic_account_circle_black_48dp" />
+
+        <item
+            android:id="@+id/m07"
+            android:title="销售出库"
+            android:checkable="true"
+            android:icon="@mipmap/ic_account_circle_black_48dp" />
+
+        <item
+            android:id="@+id/m08"
+            android:title="移    库"
+            android:checkable="true"
+            android:icon="@mipmap/ic_account_circle_black_48dp" />
+
+        <item
+            android:id="@+id/m09"
+            android:title="盘    点"
+            android:checkable="true"
+            android:icon="@mipmap/ic_account_circle_black_48dp" />
+
+
+        <item
+            android:id="@+id/m10"
+            android:title="包    装"
+            android:checkable="true"
+            android:icon="@mipmap/ic_account_circle_black_48dp" />
+
+        <item
+            android:id="@+id/m11"
+            android:title="设    置"
+            android:checkable="true"
+            android:icon="@mipmap/ic_account_circle_black_48dp" />
+
+    </group>
+</menu>

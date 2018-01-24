@@ -1,0 +1,253 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thb.app.APPTab2Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/tab2_pb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+
+        <RelativeLayout
+            android:id="@+id/tab2_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray">
+
+            <TableLayout
+                android:id="@+id/tab2_tl"
+                android:background="@color/white"
+                android:padding="10.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:shrinkColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tab2_tv_dd"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="订单" />
+
+                    <EditText
+                        android:id="@+id/tab2_et_dd"
+                        android:textSize="15.0sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:maxLines="1" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tab2_tv_ck"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="仓库" />
+
+                    <EditText
+                        android:id="@+id/tab2_et_ck"
+                        android:textSize="15.0sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:inputType="none" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tab2_tv_wl"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="物料" />
+
+                    <EditText
+                        android:id="@+id/tab2_et_wl"
+                        android:textSize="15.0sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:maxLines="1"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tab2_tv_sm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="说明" />
+
+                    <EditText
+                        android:id="@+id/tab2_et_sm"
+                        android:textSize="15.0sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tab2_tv_wjsl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未结数量" />
+
+                    <EditText
+                        android:id="@+id/tab2_et_wjsl"
+                        android:textSize="15.0sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tab2_tv_sl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="数量" />
+
+                    <EditText
+                        android:id="@+id/tab2_et_sl"
+                        android:textSize="15.0sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_below="@id/tab2_tl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/WhiteSmoke">
+
+                <View
+                    android:id="@+id/tab2_v1"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+
+                <HorizontalScrollView
+                    android:id="@+id/tab2_hsv_elv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ExpandableListView
+                            android:id="@+id/tab2_elv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="184dp"
+                            android:scrollbars="vertical"
+                            android:transcriptMode="alwaysScroll"
+                            >
+
+                        </ExpandableListView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <View
+                    android:id="@+id/tab2_v2"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tab2_hsv_b"
+                android:background="@color/blue2"
+                android:layout_gravity="bottom">
+
+                <LinearLayout
+                    android:id="@+id/tab2_ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/tab2_b_sm"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:textSize="13sp"
+                        android:text="扫描"/>
+
+                    <Button
+                        android:id="@+id/tab2_b_tj"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:textSize="13sp"
+                        android:text="提交"/>
+
+                    <Button
+                        android:id="@+id/tab2_b_qk"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:textSize="13sp"
+                        android:text="清空"/>
+
+                    <Button
+                        android:id="@+id/tab2_b_act4"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:textSize="13sp"
+                        android:text="操作4"/>
+
+                    <Button
+                        android:id="@+id/tab2_b_act5"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:textSize="13sp"
+                        android:text="批量提交"/>
+
+                    <Button
+                        android:id="@+id/tab2_b_act6"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:textSize="13sp"
+                        android:text="操作6"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+</FrameLayout>

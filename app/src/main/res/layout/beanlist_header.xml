@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/tab1_linear"
+    android:background="@color/gray"
+    android:orientation="horizontal"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/tab1_linear_text1"
+        android:textSize="15.0sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MITM" />
+
+    <TextView
+        android:id="@+id/tab1_linear_text2"
+        android:textSize="15.0sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UNOM" />
+
+    <TextView
+        android:id="@+id/tab1_linear_text3"
+        android:textSize="15.0sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PONO" />
+
+    <TextView
+        android:id="@+id/tab1_linear_text4"
+        android:textSize="15.0sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:text="SITM" />
+
+    <TextView
+        android:id="@+id/tab1_linear_text5"
+        android:textSize="15.0sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:text="QANA" />
+
+    <TextView
+        android:id="@+id/tab1_linear_text6"
+        android:textSize="15.0sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:text="SCPF" />
+    <TextView
+        android:id="@+id/tab1_linear_text7"
+        android:textSize="15.0sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:text="SCPQ" />
+    <TextView
+        android:id="@+id/tab1_linear_text8"
+        android:textSize="15.0sp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:text="INDT" />
+    <TextView
+        android:id="@+id/tab1_linear_text9"
+        android:textSize="15.0sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:text="EXDT" />
+
+</LinearLayout>

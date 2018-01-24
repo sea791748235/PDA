@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thb.login.LOGINTestActivity"
+    android:background="@mipmap/login_bg1">
+
+
+<!--
+    <include
+        android:id="@+id/test_title"
+        layout="@layout/login_title"/>
+
+                android:layout_below="@+id/test_title"
+-->
+    <LinearLayout
+        android:id="@+id/test_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dip"
+            android:layout_height="200dip"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/logo_corner"
+            />
+
+<!--
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:text="AAAAAAAA"
+            android:textColor="#ffffff"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="BBBBBBBBB"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_linear"
+        android:layout_marginTop="10dip">
+
+        <include
+            android:id="@+id/test_input"
+            android:layout_width="match_parent"
+            android:layout_height="150dip"
+            layout="@layout/login_input"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <include
+            android:id="@+id/test_progress"
+            android:layout_width="match_parent"
+            android:layout_height="180dip"
+            layout="@layout/login_progress"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/test_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_below="@id/test_input"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="70dip"
+            style="@style/CustomCheckBoxTheme"
+
+            android:paddingBottom="2dip"
+            android:paddingTop="2dip"
+            android:text="记住登陆信息"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/test_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+id/test_checkbox"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dip"
+            android:background="@drawable/login_text"
+            android:gravity="center"
+            android:paddingBottom="2dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="2dip"
+            android:text="登    陆"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

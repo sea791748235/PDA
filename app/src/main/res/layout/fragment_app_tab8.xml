@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".APPTab8Fragment">
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:stretchColumns="1">
+
+        <Button android:id="@+id/tab8_button_update"
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_margin="30dp"
+            android:layout_gravity="center_horizontal"
+            android:text="检查新版本"
+            android:background="@drawable/login_radius"/>
+
+         <Button android:id="@+id/tab8_button_conn"
+             android:layout_height="wrap_content"
+             android:layout_width="200dp"
+             android:layout_margin="30dp"
+             android:layout_gravity="center_horizontal"
+             android:text="清除报工记录"
+             android:background="@drawable/login_radius"/>
+    </LinearLayout>
+
+</FrameLayout>

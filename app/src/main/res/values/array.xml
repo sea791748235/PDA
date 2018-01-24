@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerItems">
+        <item>请选择公司</item>
+        <item>公司2</item>
+        <item>公司3</item>
+        <item>191</item>
+        <item>公司5</item>
+        <item>公司6</item>
+    </string-array>
+</resources>

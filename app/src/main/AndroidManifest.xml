@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thb.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/pda_login_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/pda_login_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.thb.qr.QRMainActivity" />
+        <activity
+            android:name=".APPMainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.thb.login.LOGINMainActivity" />
+        <activity android:name="com.thb.test.TestActivity">
+
+        </activity>
+        <activity android:name="com.thb.login.LOGINTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.thb.test.Test2Activity" />
+        <activity
+            android:name="com.thb.test.Test3Activity"
+            android:label="@string/title_activity_test3"
+            android:theme="@style/AppTheme">
+
+
+        </activity>
+    </application>
+
+</manifest>

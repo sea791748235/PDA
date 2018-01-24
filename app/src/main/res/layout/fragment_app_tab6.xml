@@ -1,0 +1,241 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thb.app.APPTab6Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/tab6_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/gray">
+
+            <TableLayout
+                android:id="@+id/tab6_tl"
+                android:background="@color/white"
+                android:padding="10.0dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1"
+                android:shrinkColumns="1">
+
+                <TableRow
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生产订单"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/tab6_et_scdd"
+                    android:textSize="20.0sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:background="@drawable/et_shapes"
+                    android:singleLine="true"
+                    android:paddingLeft="3dp"
+                    android:selectAllOnFocus="true"
+                    android:nextFocusDown="@id/tab6_et_bgsl"/>
+
+            </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="仓        库"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/tab6_tv_ck"
+                        android:textSize="20.0sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:textStyle="italic"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="物        料"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/tab6_tv_wl"
+                        android:textSize="20.0sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:textStyle="italic"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="描        述"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/tab6_tv_sm"
+                        android:textSize="20.0sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:lines="2"
+                        android:textStyle="italic"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="订单数量"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/tab6_tv_ddsl"
+                        android:textSize="20.0sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:textStyle="italic"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未结数量"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/tab6_tv_wjsl"
+                        android:textSize="20.0sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:textStyle="italic"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="批        次"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/tab6_et_pc"
+                        android:textSize="20.0sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:background="@drawable/et_shapes"
+                        android:singleLine="true"
+                        android:paddingLeft="3dp"
+                        android:selectAllOnFocus="true"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="报工数量"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/tab6_et_bgsl"
+                        android:textSize="20.0sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:background="@drawable/et_shapes"
+                        android:singleLine="true"
+                        android:paddingLeft="3dp"
+                        android:selectAllOnFocus="true"
+                        android:nextFocusDown="@id/tab6_et_scdd"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0"
+            android:background="@color/blue2"
+            android:gravity="bottom"
+            android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/tab6_btn_sm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:text="扫描"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/tab6_btn_tj"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:text="提交"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/tab6_btn_qc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:text="清除"
+                        android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ProgressBar
+        android:id="@+id/tab6_pb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        android:layout_gravity="center" />
+
+</FrameLayout>
